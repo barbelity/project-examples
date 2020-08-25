@@ -1,0 +1,17 @@
+# bamboo.yaml
+---
+version: 2
+plan:
+  project-key: PSPECS
+  name: Plan Specs 1
+  key: PSPECS1
+
+stages:
+  - First Build Stage:
+      jobs:
+        - Build Ship Server
+
+Build Ship Server:
+  tasks:
+    - script:
+        - echo 'Hello world'
